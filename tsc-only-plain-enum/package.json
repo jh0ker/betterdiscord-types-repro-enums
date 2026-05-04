@@ -1,0 +1,13 @@
+{
+  "name": "tsc-only-plain-enum",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "show": "cat dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "const-enum-no-isolated-modules",
+  "name": "vite-const-enum-no-isolated-modules",
   "private": true,
   "version": "0.0.0",
   "type": "module",

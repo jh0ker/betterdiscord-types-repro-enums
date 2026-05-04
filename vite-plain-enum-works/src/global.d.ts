@@ -1,5 +1,5 @@
-declare module "betterdiscord-plain" {
-  export enum ButtonSizes {
+declare global {
+  enum ButtonSizes {
     NONE = "",
     TINY = "bd-button-tiny",
     SMALL = "bd-button-small",
@@ -7,11 +7,24 @@ declare module "betterdiscord-plain" {
     LARGE = "bd-button-large",
   }
 
-  export enum OptionTypes {
+  enum OptionTypes {
     SUB_COMMAND = 1,
     SUB_COMMAND_GROUP = 2,
     STRING = 3,
     INTEGER = 4,
     BOOLEAN = 5,
   }
+
+  const BdApi: {
+    Components: {
+      Button: {
+        Sizes: typeof ButtonSizes;
+      };
+    };
+    Commands: {
+      OptionTypes: typeof OptionTypes;
+    };
+  };
 }
+
+export {};

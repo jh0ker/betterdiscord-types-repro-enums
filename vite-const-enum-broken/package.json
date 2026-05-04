@@ -1,5 +1,5 @@
 {
-  "name": "plain-enum-works",
+  "name": "vite-const-enum-broken",
   "private": true,
   "version": "0.0.0",
   "type": "module",
